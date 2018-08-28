@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Assignment 6</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <style>
+        .dnone{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+            <h1>Assignment 6 - Jquery Ajax</h1>
+            <ol>
+                <li>Write a function to take movie’s title, year or id</li>
+            </ol>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12">
+            <form id="movieDetail">
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="By_Title">
+                        <label class="form-check-label" for="inlineRadio1">By Title</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="By_ID">
+                        <label class="form-check-label" for="inlineRadio2">By ID</label>
+                    </div>
+                </div>
+                <div class="form-group codeBlock1 dnone">
+                    <label for="title">Type Movie Title</label> search engine
+                    <input type="name" class="form-control" id="title">
+                </div>
+                <div class="form-group codeBlock1 dnone">
+                    <label for="year">Type Year</label> search engine
+                    <input type="name" class="form-control" id="year">
+                </div>
+                <div class="form-group codeBlock2 dnone">
+                    <label for="movie_ID">Type ID</label> search engine
+                    <input type="name" class="form-control" id="movie_ID">
+                </div>
+
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 mt-5">
+            <div id="mimdbID"></div>
+            <div id="mPoster"></div>
+            <div id="mTitle"></div>
+            <div id="mYear"></div>
+            <div id="mRated"></div>
+            <div id="mReleased"></div>
+            <div id="mGenre"></div>
+            <div id="mRuntime"></div>
+            <div id="mActors"></div>
+            <div id="mPlot"></div>
+            <div id="mProduction"></div>
+            <div id="mWebsite"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
